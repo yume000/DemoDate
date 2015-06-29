@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:id="@+id/datepickerbutton" android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:text="DatePicker" android:onClick="btnOnClick"/>
+    <Button android:id="@+id/timepickerbutton" android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:text="TimePicker"  android:onClick="btnOnClick"/>
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent"
+        android:id="@+id/dateText" android:hint="@string/msgChoosedate"/>
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent"
+        android:id="@+id/timeText" android:hint="@string/msgChoosetime"/>
+</LinearLayout>
