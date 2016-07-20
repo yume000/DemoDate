@@ -9,6 +9,8 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
+
 /**
  * onCreate的部分有Calendar物件的操作
  * button實作DatePickerDialog & TimePickerDialog
@@ -23,8 +25,8 @@ public class DateDemoActivity extends Activity {
         dateText=(TextView) findViewById(R.id.dateText);
         timeText=(TextView) findViewById(R.id.timeText);
 
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
-        SimpleDateFormat sdf2=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd", Locale.TAIWAN);
+        SimpleDateFormat sdf2=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.TAIWAN);
         int x=5;
         Calendar myCal = Calendar.getInstance();
         int y=myCal.get(Calendar.YEAR);
